@@ -1,11 +1,11 @@
 {
   "runtime": "Net80",
-  "defaultVariables": null,
+  "defaultVariables": "Configuration=Debug,Environment=NSwag",
   "documentGenerator": {
     "aspNetCoreToOpenApi": {
       "project": "WebApiOne.csproj",
       "defaultUrlTemplate": "api/{controller}/{id?}",
-      "configuration": null,
+      "configuration": "$(Configuration)",
       "noBuild": true,
       "verbose": true,
       "requireParametersWithoutDefault": false,
@@ -35,7 +35,7 @@
       "operationProcessorTypes": [],
       "useDocumentProvider": true,
       "documentName": "v1",
-      "aspNetCoreEnvironment": null,
+      "aspNetCoreEnvironment": "$(Environment)",
       "createWebHostBuilderMethod": null,
       "startupType": null,
       "allowNullableBodyParameters": true,
