@@ -8,7 +8,7 @@ dotnet new tool-manifest
 ```
 Now the dotnet tool can be installed
 ```
-dotnet tool install -g NSwag.ConsoleCore
+dotnet tool install NSwag.ConsoleCore
 ```
 
 ## Install NSwag NuGet Dependencies
@@ -133,7 +133,10 @@ Add the following MSBuild target section which restores dotnet tool and runs the
 </Target>
 ```
 
-Alternatively, the command to generate the OpenApi document is
+### Run nswag in CLI
+Alternatively, assuming the dotnet tool `NSwag.ConsoleCore` is installed
+
+the command to generate the OpenApi document is
 ```
-nswag run nswag.json
+dotnet nswag run nswag.json
 ```
